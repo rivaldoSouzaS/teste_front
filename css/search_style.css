@@ -1,0 +1,288 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: white;
+}
+
+header {
+  width: 100%;
+  background-color: #101010;
+  padding: 10px 20px;
+}
+
+.mavbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*border: 1px solid white;*/
+}
+
+.logo {
+  width: 90px;
+  height: 70px;
+  border-radius: 10px;
+}
+
+.hamburguer {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  display: none;
+}
+
+.menu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu li {
+  margin-left: 10px;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #555;
+  font-size: 20px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.menu li a:hover {
+  color: white;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-left: 15px;
+}
+
+.estilo-links {
+  padding: 5px 18px;
+  background-color: #555;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  float: right;
+  margin-left: 15px;
+}
+
+#lupa {
+  background: url("../img/lupa.png");
+  width: 30px;
+  height: 30px;
+}
+
+#entrar {
+  color: #555;
+  background-color: #101010;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #555;
+}
+
+.container .div-imagem img {
+  height: 340px;
+  width: 500px;
+}
+
+.container .search {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  color: white;
+  /*
+        &::after{
+            content: url(../img/lupa-2.png); o campo input nao pode conter um elemento after
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            display: block;
+            height: 50px;
+        }
+        */
+}
+
+.container .search h1 {
+  font-size: 60px;
+  margin-top: 150px;
+}
+
+.container .search h3 {
+  font-size: 20px;
+}
+
+.container .search .buscar-herois {
+  width: 400px;
+  background-color: white;
+  background-repeat: no-repeat;
+  height: 60px;
+  border: none;
+  outline: none;
+  margin-left: 0px;
+  margin-top: 100px;
+  -webkit-box-shadow: #000 2px 3px 10px;
+          box-shadow: #000 2px 3px 10px;
+  border-radius: 5px;
+  font-size: 50px;
+}
+
+.container .search .buscar-herois img {
+  width: 300px;
+}
+
+.container .search #botao-search {
+  background-image: url(../img/lupa-2.png);
+  background-color: white;
+  position: absolute;
+  width: 50px;
+  height: 60px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+  margin-left: 350px;
+  cursor: pointer;
+}
+
+#container-mostrar-busca {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  background-color: black;
+}
+
+#container-mostrar-busca .div-imagens {
+  width: 300px;
+  height: 300px;
+}
+
+#container-mostrar-busca img {
+  width: 100%;
+  height: 100%;
+}
+
+#container-mostrar-busca .div-texto {
+  background-color: #555;
+  max-width: 300px;
+  height: 90px;
+  padding: 10px 5px 10px 5px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+#container-mostrar-busca .div-car-herois {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+footer {
+  width: 100%;
+  height: 300px;
+  background-color: #555;
+}
+
+@media screen and (max-width: 925px) {
+  #lupa, #assinar, .logo {
+    display: none;
+  }
+  .hamburguer {
+    display: block;
+    z-index: 999;
+    background-image: url("../img/hamburger-icon.png");
+  }
+  .links {
+    height: 70px;
+  }
+  .menu.active {
+    left: 0;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    background-color: #222;
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 100px 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    z-index: 1;
+  }
+}
+/*# sourceMappingURL=search_style.css.map */

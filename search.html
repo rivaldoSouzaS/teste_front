@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="css/search_style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="mavbar">
+            <img class="logo" src="img/logoMarvel-2.png" alt="">
+            <div class="hamburguer active"></div>
+
+            <ul class="menu active">
+                <li><a href="#">Inspiration</a></li>
+                <li><a href="#">Super hero</a></li>
+                <li><a href="#">Learn more</a></li>
+                <li><a href="#">Pro hero</a></li>
+            </ul>
+
+            <div class="links">
+
+                <a href="#"><img id="lupa" src="img/lupa.png" alt=""></a>
+                <a id="entrar" class="estilo-links" href="signIn.html">sign in</a>
+                <a id="assinar" class="estilo-links" href="#">sign up</a>
+                
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="div-imagem">
+            <img src="img/m-marvel.jpg" alt="">
+        </div>
+        <div class="search">
+            <h1>Search Dribbble</h1>
+            <h3>6,600,000+ images from thousands of inspirational designers</h3>
+            <button id="botao-search"></button>
+            <input id="buscarHerois" class="buscar-herois" type="text">
+        </div>
+    </div>
+
+    <div id="container-mostrar-busca">
+        
+    </div>
+
+    <footer>
+        
+    </footer>
+
+    <script src="javaScript/script.js"></script>
+    <script src="javaScript/script-search.js"></script>
+</body>
+</html>
