@@ -134,6 +134,31 @@ header {
   max-height: 450px;
 }
 
+footer {
+  width: 100%;
+  height: 300px;
+  background-color: #555;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 100px;
+  color: white;
+  font-size: 20px;
+}
+
 @media screen and (max-width: 925px) {
   .central {
     margin-top: 60px;

@@ -4,7 +4,10 @@ $(document).ready(function(){
         $(this).toggleClass("active");
         $(".menu").toggleClass("active");
     });
-    document.getElementById("email-user").innerText = localStorage.email;
+    let usuario = document.getElementById("email-user");
+    if(usuario !== null){
+        usuario.innerText = localStorage.email;
+    }
 });
 
 const botaoFiltroStorm = document.getElementById("filtroStorm");
@@ -15,6 +18,10 @@ const botaoFiltroXMan = document.getElementById("filtro-x-man");
 botaoFiltroXMan.addEventListener("click", filtroXMan);
 const botaoFiltroSpiderMan = document.getElementById("filtro-spider-man");
 botaoFiltroSpiderMan.addEventListener("click", filtroSpiderMan);
+
+var ano = document.getElementById("ano");
+var dataAtual = new Date();
+ano.innerHTML = dataAtual.getFullYear();
 
 
 const timesTamp2 = '16204780189';
