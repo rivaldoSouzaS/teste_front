@@ -33,13 +33,13 @@ header {
   /*border: 1px solid white;*/
 }
 
-.logo {
+.mavbar__logo {
   width: 90px;
   height: 70px;
   border-radius: 10px;
 }
 
-.hamburguer {
+.mavbar__hamburguer {
   width: 40px;
   height: 40px;
   background-color: transparent;
@@ -49,7 +49,7 @@ header {
   display: none;
 }
 
-.menu {
+.mavbar__menu {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,11 +62,11 @@ header {
           align-items: center;
 }
 
-.menu li {
+.mavbar__menu li {
   margin-left: 10px;
 }
 
-.menu li a {
+.mavbar__menu li a {
   display: block;
   padding: 10px 15px;
   text-decoration: none;
@@ -76,7 +76,7 @@ header {
   transition: 0.5s ease;
 }
 
-.menu li a:hover {
+.mavbar__menu li a:hover {
   color: white;
 }
 
@@ -94,7 +94,7 @@ header {
   margin-left: 15px;
 }
 
-.estilo-links {
+.links__estilo-links {
   padding: 5px 18px;
   background-color: #555;
   border-radius: 5px;
@@ -133,12 +133,12 @@ header {
   background-color: #555;
 }
 
-.container .div-imagem img {
+.container .container__imagem img {
   height: 340px;
   width: 500px;
 }
 
-.container .search {
+.container .container__search {
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -160,16 +160,16 @@ header {
         */
 }
 
-.container .search h1 {
+.container .container__search h1 {
   font-size: 60px;
   margin-top: 150px;
 }
 
-.container .search h3 {
+.container .container__search h3 {
   font-size: 20px;
 }
 
-.container .search .buscar-herois {
+.container .container__search .buscar-herois {
   width: 400px;
   background-color: white;
   background-repeat: no-repeat;
@@ -184,11 +184,11 @@ header {
   font-size: 50px;
 }
 
-.container .search .buscar-herois img {
+.container .container__search .buscar-herois img {
   width: 300px;
 }
 
-.container .search #botao-search {
+.container .container__search #botao-search {
   background-image: url(../img/lupa-2.png);
   background-color: white;
   position: absolute;
@@ -270,10 +270,12 @@ footer div {
 }
 
 @media screen and (max-width: 925px) {
-  #lupa, #assinar, .logo {
+  #lupa,
+  #assinar,
+  .mavbar__logo {
     display: none;
   }
-  .hamburguer {
+  .mavbar__hamburguer {
     display: block;
     z-index: 999;
     background-image: url("../img/hamburger-icon.png");
@@ -281,10 +283,10 @@ footer div {
   .links {
     height: 70px;
   }
-  .menu.active {
+  .mavbar__menu.mavbar__hamburguer--active {
     left: 0;
   }
-  .menu {
+  .mavbar__menu {
     position: absolute;
     top: 0;
     left: -100%;

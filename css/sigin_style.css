@@ -31,7 +31,7 @@ header {
           align-items: center;
 }
 
-.logo {
+.mavbar__logo {
   width: 90px;
   height: 70px;
   border-radius: 10px;
@@ -47,7 +47,7 @@ header {
           flex-direction: row;
 }
 
-.lateral {
+.container__lateral {
   -webkit-box-flex: 0.2;
       -ms-flex-positive: 0.2;
           flex-grow: 0.2;
@@ -55,14 +55,14 @@ header {
   background-color: #222;
 }
 
-.lateral h1 {
+.container__lateral h1 {
   max-width: 350px;
   color: white;
   font-size: 30px;
   margin: 120px 0 0 60px;
 }
 
-.formulario {
+.container__formulario {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,7 +80,7 @@ header {
           align-items: center;
 }
 
-.formulario input {
+.container__formulario input {
   width: 100%;
   padding: 16px;
   margin-bottom: 20px;
@@ -90,14 +90,14 @@ header {
   background-color: rgba(211, 207, 207, 0.781);
 }
 
-.formulario input:hover {
+.container__formulario input:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-box-shadow: 0 0 0 2px rgba(122, 121, 121, 0.699);
           box-shadow: 0 0 0 2px rgba(122, 121, 121, 0.699);
 }
 
-.formulario button {
+.container__formulario button {
   width: 100%;
   padding: 16px;
   margin-bottom: 20px;
@@ -108,25 +108,26 @@ header {
   color: white;
 }
 
-.formulario button:hover {
+.container__formulario button:hover {
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
   background-color: #4c4cf5;
 }
 
-.formulario #id-singin {
+.container__formulario #id-singin {
   max-width: 210px;
   background-color: red;
   color: white;
 }
 
-.formulario #id-singin:hover {
+.container__formulario #id-singin:hover {
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
   background-color: #fa4646;
 }
 
-.formulario hr, .formulario h2 {
+.container__formulario hr,
+.container__formulario h2 {
   margin-bottom: 20px;
 }
 
@@ -163,7 +164,7 @@ footer div {
   .central {
     margin-top: 60px;
   }
-  .lateral {
+  .container__lateral {
     display: none;
   }
 }

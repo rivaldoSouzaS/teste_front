@@ -1,94 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teste front end</title>
 
     <script
-        src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-        crossorigin="anonymous">
-    </script>
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
 
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body onload='window.history.back();'>
-
+  <body onload="window.history.back();">
     <header>
-        <div class="mavbar">
-            <img class="logo" src="img/logoMarvel-2.png" alt="">
-            <div class="hamburguer active"></div>
+      <div class="mavbar">
+        <img class="mavbar__logo" src="img/logoMarvel-2.png" alt="" />
+        <div class="mavbar__hamburguer mavbar__hamburguer--active"></div>
 
-            <ul class="menu active">
-                <li><a href="#">Inspiration</a></li>
-                <li><a href="#">Super hero</a></li>
-                <li><a href="#">Learn more</a></li>
-                <li><a href="#">Pro hero</a></li>
-            </ul>
+        <ul class="mavbar__menu">
+          <!--retirar a classe active daqui-->
+          <li><a href="#">Inspiration</a></li>
+          <li><a href="#">Super hero</a></li>
+          <li><a href="#">Learn more</a></li>
+          <li><a href="#">Pro hero</a></li>
+        </ul>
 
-            <div class="links">
-                <a href="search.html"><img id="lupa" src="img/lupa.png" alt=""></a>
-                <a id="entrar" class="estilo-links" href="signIn.html">sign in</a>
-                <a id="assinar" class="estilo-links" href="#">sign up</a>
-                
-            </div>
+        <div class="mavbar__links">
+          <a href="search.html"><img id="lupa" src="img/lupa.png" alt="" /></a>
+          <a id="entrar" class="mavbar__links__estilo-links" href="signIn.html"
+            >sign in</a
+          >
+          <a id="assinar" class="mavbar__links__estilo-links" href="#"
+            >sign up</a
+          >
         </div>
+      </div>
     </header>
-    
+
     <div class="container">
-        <div class="div-imagem">
-            <img id="imagem-marvel" src="img/imagem_marvel-2.png" alt="">
-        </div>
+      <div class="container__imagem">
+        <img id="imagem-marvel" src="img/imagem_marvel-2.png" alt="" />
+      </div>
 
-        <div class="div-text">
-            <h1>Discover the world’s top designers & creatives</h1>
-            <h3>Dribbble is the leading destination to find & showcase creative 
-                work and home to the world's best design professionals.</h3>
-        </div>
+      <div class="container__text">
+        <h1>Discover the world’s top designers & creatives</h1>
+        <h3>
+          Dribbble is the leading destination to find & showcase creative work
+          and home to the world's best design professionals.
+        </h3>
+      </div>
     </div>
 
-    <div class="container-filtros">
-        <button id="filtroStorm" class="botao-filtro">Storm</button>
-        <button id="filtroAnt-man"class="botao-filtror">Ant-Man</button>
-        <button id="filtro-x-man"class="botao-filtro">X-Man</button>
-        <button id="filtro-spider-man"class="botao-filtro">Spider-Man</button>
+    <div class="filtros">
+      <button id="filtroStorm" class="filtros__botao">Storm</button>
+      <button id="filtroAnt-man" class="filtros__botao">Ant-Man</button>
+      <button id="filtro-x-man" class="filtros__botao">X-Man</button>
+      <button id="filtro-spider-man" class="filtros__botao">Spider-Man</button>
     </div>
 
-    <div id="container-card">
-        <div class="cabecalho">
-            
-            <div id="informacao">
-                <div id="avatar-desc">
-                    <img src="img/avatar.jpg" alt="">
-                </div>
-                <div class="desc-cabecalho">
-                    <h1>Marvel Movies Interaction</h1>
-                    <p id="email-user">Usuario</p>
-                </div>
-            </div>
-            
-            <div class="links links-card">
-                <a id="entrar" class="estilo-links" href="signIn.html">Save</a>
-                <a id="assinar" class="estilo-links" href="#">Like</a>
-            </div>
+    <div class="card">
+      <div class="card__cabecalho">
+        <div class="card__cabecalho__informacao">
+          <div id="avatar-desc">
+            <img src="img/avatar.jpg" alt="" />
+          </div>
+          <div class="card__cabecalho__informacao__texto">
+            <!--desc-cabecalho-->
+            <h1>Marvel Movies Interaction</h1>
+            <p id="email-user">Usuario</p>
+          </div>
         </div>
 
-        <div id="cartao-principal"></div>
+        <div class="card__links">
+          <a class="card__links__entrar" href="signIn.html">Save</a>
+          <a class="card__links__entrar card__links__entrar--margin" href="#"
+            >Like</a
+          >
+        </div>
+      </div>
+
+      <div id="cartao-principal"></div>
     </div>
 
     <footer>
-        <!--meu footer-->
-        <div>
-            <p id="copy">&copy; Beta Sistemas LTDA</p>
-            <p id="ano"></p>
-        </div>
-        
+      <!--meu footer-->
+      <div>
+        <p id="copy">&copy; Beta Sistemas LTDA</p>
+        <p id="ano"></p>
+      </div>
     </footer>
-    
+
     <script src="javaScript/script.js"></script>
     <!--ultimo commit-->
-</body>
+  </body>
 </html>

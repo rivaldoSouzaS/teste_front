@@ -33,13 +33,13 @@ header .mavbar {
   /*border: 1px solid white;*/
 }
 
-header .mavbar .logo {
+header .mavbar .mavbar__logo {
   width: 90px;
   height: 70px;
   border-radius: 10px;
 }
 
-.hamburguer {
+.mavbar__hamburguer {
   width: 40px;
   height: 40px;
   background-color: transparent;
@@ -49,7 +49,7 @@ header .mavbar .logo {
   display: none;
 }
 
-.menu {
+.mavbar__menu {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,11 +62,11 @@ header .mavbar .logo {
           align-items: center;
 }
 
-.menu li {
+.mavbar__menu li {
   margin-left: 10px;
 }
 
-.menu li a {
+.mavbar__menu li a {
   display: block;
   padding: 10px 15px;
   text-decoration: none;
@@ -76,11 +76,11 @@ header .mavbar .logo {
   transition: 0.5s ease;
 }
 
-.menu li a:hover {
+.mavbar__menu li a:hover {
   color: white;
 }
 
-.links {
+.mavbar__links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,7 +94,7 @@ header .mavbar .logo {
   margin-left: 15px;
 }
 
-.links .estilo-links {
+.mavbar__links .mavbar__links__estilo-links {
   padding: 5px 18px;
   background-color: #555;
   border-radius: 5px;
@@ -105,12 +105,12 @@ header .mavbar .logo {
   margin-left: 15px;
 }
 
-.links #entrar {
+.mavbar__links #entrar {
   color: #555;
   background-color: #101010;
 }
 
-.links #lupa {
+.mavbar__links #lupa {
   background: url("../img/lupa.png");
   width: 30px;
   height: 30px;
@@ -131,7 +131,7 @@ header .mavbar .logo {
   height: 300px;
 }
 
-.container .div-text {
+.container .container__text {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -143,20 +143,20 @@ header .mavbar .logo {
           align-items: center;
 }
 
-.container .div-text h1 {
+.container .container__text h1 {
   margin-top: 50px;
   max-width: 550px;
   font-size: 42px;
 }
 
-.container .div-text h3 {
+.container .container__text h3 {
   max-width: 550px;
   margin-top: 20px;
   font-size: 20px;
   margin-bottom: 20px;
 }
 
-.container-filtros {
+.filtros {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,7 +169,7 @@ header .mavbar .logo {
       justify-content: space-around;
 }
 
-.container-filtros button {
+.filtros .filtros__botao {
   padding: 5px 18px;
   margin: 5px 0px 5px 0px;
   border: none;
@@ -180,11 +180,11 @@ header .mavbar .logo {
   font-size: 20px;
 }
 
-.container-filtros button:hover {
+.filtros .filtros__botao:hover {
   background-color: #a0a0a0;
 }
 
-#container-card {
+.card {
   width: 100%;
   background-color: white;
   display: -webkit-box;
@@ -196,7 +196,7 @@ header .mavbar .logo {
           flex-direction: column;
 }
 
-#container-card .cabecalho {
+.card .card__cabecalho {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -210,7 +210,7 @@ header .mavbar .logo {
   margin: 0 auto;
 }
 
-#container-card .cabecalho #informacao {
+.card .card__cabecalho .card__cabecalho__informacao {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,11 +220,11 @@ header .mavbar .logo {
   padding: 45px 0px 45px 0px;
 }
 
-#container-card .cabecalho #informacao .desc-cabecalho {
+.card .card__cabecalho .card__cabecalho__informacao .card__cabecalho__informacao__texto {
   padding-left: 10px;
 }
 
-#container-card .cabecalho .links-card {
+.card .card__cabecalho .card__links {
   padding: 45px 0px 45px 0px;
   margin-left: 0px;
   display: -webkit-box;
@@ -233,19 +233,26 @@ header .mavbar .logo {
   min-width: 300px;
 }
 
-#container-card .cabecalho .links-card #entrar, #container-card .cabecalho .links-card #assinar {
+.card .card__cabecalho .card__links .card__links__entrar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   text-align: center;
-  padding-top: 20px;
-  height: 50px;
-  width: 80px;
+  text-decoration: none;
+  padding: 5px 18px;
+  font-size: 20px;
+  border-radius: 5px;
+  color: white;
+  background: #555;
 }
 
-#container-card #cartao-principal {
+.card .card__cabecalho .card__links .card__links__entrar--margin {
+  margin-left: 15px;
+}
+
+.card #cartao-principal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,7 +268,7 @@ header .mavbar .logo {
   width: 60%;
 }
 
-#container-card #cartao-principal .imagens-principal {
+.card #cartao-principal .imagens-principal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -270,7 +277,7 @@ header .mavbar .logo {
   border-radius: 30px;
 }
 
-#container-card #cartao-principal .div-cartao-principal {
+.card #cartao-principal .div-cartao-principal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -308,15 +315,17 @@ footer div {
 }
 
 @media screen and (max-width: 925px) {
-  #lupa, #assinar, .logo {
+  #lupa,
+  #assinar,
+  .mavbar__logo {
     display: none;
   }
-  .hamburguer {
+  .mavbar__hamburguer {
     display: block;
     z-index: 999;
     background-image: url("../img/hamburger-icon.png");
   }
-  .menu {
+  .mavbar__menu {
     position: absolute;
     top: 0;
     left: -100%;
@@ -335,7 +344,7 @@ footer div {
     transition: 0.5s ease;
     z-index: 1;
   }
-  .menu.active {
+  .mavbar__menu.mavbar__hamburguer--active {
     left: 0;
   }
   .container {
@@ -350,7 +359,7 @@ footer div {
         -ms-flex-align: center;
             align-items: center;
   }
-  .container .div-text {
+  .container .container__text {
     text-align: center;
   }
 }
